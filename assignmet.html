@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <link rel="stylesheet" href="./style1.css">
+   
+    
+
+</head>
+<body>
+    <!-- -----------------Nav Bar----------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shoe Cart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Login" style="cursor:pointer">LogIn</a>
+               
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor:pointer">Register</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+         <!-------------- Modal Login--------- -->
+  <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <form action="">
+            <div class="row">
+                <div class="col-lg-12">
+                    <label class="form-label">Email</label>
+                    <input class="form-control" type="email" name="email" required placeholder="email">
+                </div>
+                <div class="col-lg-12">
+                    <label class="form-label">Password</label>
+                    <input class="form-control" type="password" name="passowrd" required placeholder="password">
+                </div>
+                <div class="col-lg-12">
+                    <input class="btn btn-outline-secondary w-100 mt-4"type="submit" value="Login">
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------Modal Register------------ -->
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label class="form-label">First Name</label>
+                        <input class="form-control" type="text" name="FirstName">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label">Last Name</label>
+                        <input class="form-control" type="text" name="LastName">
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="form-label">Email</label>
+                        <input class="form-control" type="email" name="email" required placeholder="email">
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="form-label">New Password</label>
+                        <input class="form-control" type="password" name="enter new passowrd" required placeholder="password">
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="form-label">Confirm Password</label>
+                        <input class="form-control" type="password" name="confirm new passowrd" required placeholder="password">
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="form-label">Address</label>
+                        <input class="form-control" type="text" name="address" >
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label">State</label>
+                        <input class="form-control" type="text" name="LastName">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label">Country</label>
+                        <input class="form-control" type="text" name="LastName">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label">Pin Code</label>
+                        <input class="form-control" type="text" name="PinCode">
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="form-label">DOB</label>
+                        <input class="form-control" type="date" name="DOB">
+                        
+                    </div>
+                    <div class="col-lg-5">
+                        <label class="form-label">Country Code</label>
+                        <input class="form-control" type="tel" name="Countrycode">
+                    </div>
+                    <div class="col-lg-7">
+                        <label class="form-label">Contact</label>
+                        <input class="form-control" type="tel" name="contact">
+                    </div>
+                    <div class="col-lg-12">
+                        <input class="btn btn-outline-dark w-100 mt-4"type="submit" value="Register">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+      </nav>
+      <br>
+      <!-- --------------Carsouel----------------- -->
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="..." height="500px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Nike Runners</h5>
+                <p>Stylist and light Nike runners for great performance</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="..." height="500px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>K-Swiss Transformers</h5>
+                <p>A perfect combo of stle and comfort.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="..." height="500px">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Nike Sneakers</h5>
+                <p>Feel the joy of these stylish Sneakers.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- ------------------Cards--------- -->
+      
+      <div class="container">
+        <div class="row mt-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                <div class="col">
+                  <div class="card">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5a0a6db215484bc18c3eaebd00c882a1_9366/VERTAGO_SHOES_Grey_GA1086_01_standard.jpg" class="card-img-top" alt="..." height="320px">
+                    <div class="card-body">
+                      <h5 class="card-title">Adidas Men Running Shoes</h5>
+                      <p class="card-text"> <sup>Rs</sup> 2099.<br>These men's running shoes keep you comfortable so you stay focused on your training goals.</p>
+                      <a href="./adidas.html" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/191671/04/sv01/fnd/IND/fmt/png/Modern-Runner-Unisex-Sneakers" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Puma Sneakers</h5>
+                      <p class="card-text"><sup>Rs</sup>2999.<br> Indulge in the best of both worlds with our Modern Runner Sneakers. </p>
+                    <a href="./puma.html"class="btn btn-primary">Add To Cart</a>
+                </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41tcxZ2E9bL._UX625_.jpg" class="card-img-top" alt="..." height="300px">
+                    <div class="card-body">
+                      <h5 class="card-title">Nike Runners</h5>
+                      <p class="card-text"><sup>Rs</sup> 2099.<br>Nike shoes offer great comfort and maintain your feet posture every time you walk. Nike is one of the most popular brands of footwear and provides you with comfort</p>
+                    <a href="./nike.html"class="btn btn-primary">Add To Cart</a>
+                </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="..." height="350px">
+                    <div class="card-body">
+                      <h5 class="card-title">HRX Runners</h5>
+                      <p class="card-text"><sup>Rs</sup> 2099.<br>These men's running shoes keep you comfortable so you stay focused on your training goals.</p>
+                   <a href="./hrx.html"class="btn btn-primary">Add To Cart</a>
+                 </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20220208/6TJS/620286e8f997dd03e2c62f53/-473Wx593H-460983999-limegreen-MODEL.jpg" class="card-img-top" alt="..." height="350px">
+                      <div class="card-body">
+                        <h5 class="card-title">Skechers Joggers</h5>
+                        <p class="card-text"><sup>Rs</sup>3099.<br>These men's running shoes keep you comfortable so you stay focused on your training goals.</p>
+                     <a href="./skechers.html"class="btn btn-primary">Add To Cart</a> 
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/191671/04/sv01/fnd/IND/fmt/png/Modern-Runner-Unisex-Sneakers" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Puma Sneakers</h5>
+                        <p class="card-text"><sup>Rs</sup>2999.<br> Indulge in the best of both worlds with our Modern Runner Sneakers. </p>
+                      <a href="./puma.html"class="btn btn-primary">Add To Cart</a>
+                  </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        
+                      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e2bb1d1edf8445aba3ead7900bbf88e_9366/Showtheway_2.0_Shoes_Blue_GY6344_01_standard.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Reebok Runners</h5>
+                        <p class="card-text"><sup>Rs</sup> 1099.<br>Made with a series of recycled materials, this upper features at least 50% recycled content. </p> 
+                        <a href="./reebok.html"class="btn btn-primary">Add To Cart</a> 
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5a0a6db215484bc18c3eaebd00c882a1_9366/VERTAGO_SHOES_Grey_GA1086_01_standard.jpg" class="card-img-top" alt="..." height="320px">
+                      <div class="card-body">
+                        <h5 class="card-title">Adidas Men Running Shoes</h5>
+                        <p class="card-text"> <sup>Rs</sup> 2099.<br>These men's running shoes keep you comfortable so you stay focused on your training goals.</p>
+                        <a href="./adidas.html" class="btn btn-primary">Add To Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20220208/6TJS/620286e8f997dd03e2c62f53/-473Wx593H-460983999-limegreen-MODEL.jpg" class="card-img-top" alt="..." height="350px">
+                      <div class="card-body">
+                        <h5 class="card-title">Skechers Joggers</h5>
+                        <p class="card-text"><sup>Rs</sup>3099.<br>These men's running shoes keep you comfortable so you stay focused on your training goals.</p>
+                     <a href="./skechers.html"class="btn btn-primary">Add To Cart</a> 
+                    </div>
+                    </div>
+                  </div>
+    
+              </div>
+        </div>
+    </div> 
+    <br>
+   <!-- ---------------------testemonial------------ -->
+   
+   <div class="container1">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card1">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        Robert Garrison
+                    </div>
+                    <div class="designation">Android Developer</div>
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                        I made bacck the purchase price in just 48 hours! Thank you for making it pain less,
+                        pleasant.
+                        The service was execellent. I will refer everyone I know.
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card1">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        Jeffery Kennan
+                    </div>
+                    <div class="designation">Full Stack Developer</div>
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                        Really good, you have saved our business! I made bacck the purchase price in just 48 hours!
+                        man, this thing is getting better and better as I learn more about it.
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card1">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        Issac Maxwell
+                    </div>
+                    <div class="designation">Finance Director</div>
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                        Account keeper is the most valuable business research we have EVER purchased. Without
+                        electrician, we would ahave gone bankrupt by now.
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+    <!-- ----------------Footer------------- -->
+    
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+    <footer class="bg-dark text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">See other shoes</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Bestsellers</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>All Shoes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Our Brands</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Execution of the contract</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Regulations</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Manufacturing house</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">The ShoeStore</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">123 Street</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">05765 NY</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us a Shoes</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Write to us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in purchasing</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order status</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the newsletter</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+  </div>
+  <!-- End of .container -->
+  
+  
+</body>
+</html>
